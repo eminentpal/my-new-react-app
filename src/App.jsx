@@ -14,7 +14,7 @@ const API_OPTIONS = {
   }
 }
 function App() {
-  const [searchTerm, setsearchTerm] = useState('')
+  const [searchTerm, setSearchTerm] = useState("")
   const [movieList, setmovieList] = useState([])
   const [isLoading, setisLoading] = useState(false)
   const [errorMessage, setErrorMessage] = useState('')
@@ -66,7 +66,7 @@ fetchMovies(searchTerm)
                 You &apos;ll Enjoy
             </h1>
           </header>
-            <Search searchTerm={searchTerm} setsearchTerm={setsearchTerm} />
+            <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
          <section className='all-movies'>
             <h2 className='mt-[40px]'>All Movies</h2>
            {
